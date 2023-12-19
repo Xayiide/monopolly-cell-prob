@@ -1,0 +1,16 @@
+name: C Makefile Github Actions test
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: src/
+    steps:
+    - uses: actions/checkout@v3
+    - name: Compile the project
+      run: make
