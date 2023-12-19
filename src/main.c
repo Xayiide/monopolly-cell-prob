@@ -7,16 +7,6 @@
 
 #include "inc/monopoly.h"
 
-int tirar_dados(void)
-{
-    int value = 0;
-
-    value  = (rand() % 6) + 1;
-    value += (rand() % 6) + 1;
-
-    return value;
-}
-
 int main(int argc, char *argv[])
 {
     uint64_t num_tiradas = 0;

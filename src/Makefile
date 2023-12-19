@@ -1,5 +1,5 @@
 CC     = gcc
-CFLAGS = -std=gnu99 -Wall -Wextra -O0 -g3
+CFLAGS = -std=gnu99 -Wall -Wextra -Wpedantic -Werror -O0 -g3
 
 .PHONY: all clean run re
 
@@ -16,7 +16,7 @@ clean:
 
 
 run: all
-	@./main 1000000
+	@./main 2000000000
 
 re: clean all
 
